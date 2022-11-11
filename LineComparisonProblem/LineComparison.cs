@@ -32,14 +32,29 @@
             Length2 = Math.Sqrt((Math.Pow(a1 - a2, 2) + Math.Pow(b1 - b2, 2)));
             Console.WriteLine("Length of first line is " + Length1);
             Console.WriteLine("Length of second line is " + Length2);
-            //Comparing Length Of Two Line
-            if(Length1.Equals(Length2))
+            //Length Equality Of Two Lines
+            if (Length1.Equals(Length2))
             {
                 Console.WriteLine("Both Lines Are Equal");
             }
             else
             {
                 Console.WriteLine("Both Lines Are Not Equal");
+            }
+            //UC3
+            //Comapring Length Of Two Lines
+            int LengthComparison = Length1.CompareTo(Length2);
+            if (LengthComparison == 0)
+            {
+                Console.WriteLine("Length of the two lines are equal");
+            }
+            else if (LengthComparison > 0)
+            {
+                Console.WriteLine("Length of line1 = " + Length1 + " is greater than length of line2 ="+Length2);
+            }
+            else
+            {
+                Console.WriteLine("Length of line1 = " + Length1 + " is lesser than length of line2= "+Length2);
             }
         }
     }
